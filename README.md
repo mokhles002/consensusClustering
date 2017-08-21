@@ -20,6 +20,18 @@ addpath(genpath('lib/'));
 ```matlab
 [data, varName, sampleName] = dataParse_clustering_excel();
 ```
+The format of the input data file should be as follows:
+
+Sample Name | Var 1	| Var 2 | Var 3 |... ...| Var d-1	| Var d
+------------|------ |-------|-------|-------|------   |------
+Sample 1	  | 6.78	| 6.31	| 9.00	|... ...| 5.94    |10.00
+Sample 2	  | 1.64	| 1.03	| 1.46	|... ...| 1.04	  | 5.76
+Sample 3	  | 1.58	| 1.00	| 1.40	|... ...| 1.06	  | 3.62
+Sample 3	  | 1.58	| 1.00	| 1.40	|... ...| 1.06	  | 3.62
+... ...     | ..... | ..... | .....	|... ...| .....   | .....
+Sample n-1	| 7.78	| 6.50	| 7.96	|... ...| 7.48	  | 8.39
+Sample n	  | 6.99	| 6.83	| 8.14	|... ...| 5.51	  | 6.76
+
 * If the input data is in matlab data file format ``(.mat)`` run the following section of code
 ```matlab
 load('data/sampleData_for_CC.mat');
